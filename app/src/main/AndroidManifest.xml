@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.gpstracking">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.GpsTracking">
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".TrackBus"
+            android:exported="false"
+            android:label="@string/title_activity_track_bus" />
+        <activity
+            android:name=".NoInternet"
+            android:exported="false" />
+        <activity
+            android:name=".StopDirection"
+            android:exported="false"
+            android:label="@string/title_activity_stop_direction" />
+        <activity
+            android:name=".RouteandBus"
+            android:exported="false"
+            android:label="@string/title_activity_routeand_bus"
+            android:parentActivityName=".MapsActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.GpsTracking.NoActionBar" />
+        <activity
+            android:name=".PushingRoutes"
+            android:exported="true" />
+        <activity
+            android:name="Fragments.RouteInformation"
+            android:exported="false" />
+        <activity
+            android:name=".RouteInfo"
+            android:exported="false" />
+        <activity
+            android:name=".searching"
+            android:exported="true"
+            android:label="@string/title_activity_searching" />
+        <activity
+            android:name=".StartActivity"
+            android:exported="true"
+            android:label="@string/title_activity_maps"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="true"
+            android:noHistory="true" />
+        <activity
+            android:name=".MapsActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>

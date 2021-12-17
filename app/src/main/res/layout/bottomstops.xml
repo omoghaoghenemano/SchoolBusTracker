@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#60000000"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="80dp"
+
+
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#51121111"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:backgroundTint="@color/material_on_surface_disabled"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- <View
+                android:layout_width="30dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="#DADADC" />
+
+            ?><androidx.appcompat.widget.SearchView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/Sv_location"
+
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/searchcolor"
+
+                android:elevation="5dp"
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+                app:iconifiedByDefault="false"
+                app:queryHint="Search for a stop or place">
+
+            </androidx.appcompat.widget.SearchView>-->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="80dp">
+
+                <com.google.android.material.tabs.TabLayout
+
+                    android:id="@+id/tab_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_margin="8dp"
+                    android:background="@drawable/tabicon"
+                    app:tabGravity="center"
+                    app:tabIndicator="@drawable/tab_indicator"
+                    app:tabIndicatorAnimationMode="elastic"
+                    app:tabIndicatorGravity="stretch"
+                    app:tabMode="auto"
+                    app:tabIndicatorColor="#F41E1E"
+                    app:tabSelectedTextColor="#F4F2F2" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="serif"
+                android:text="Stops"
+                android:textColor="@color/whitecolor"
+                android:textSize="30dp"
+                android:textStyle="bold"
+
+
+                />
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+    <androidx.viewpager.widget.ViewPager
+        android:background="@color/whitecolor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/view_pager"/>
+
+
+
+
+</LinearLayout>

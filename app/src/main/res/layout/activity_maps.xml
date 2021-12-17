@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapsActivity"
+    >
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="right|end">
+
+            <com.google.android.material.navigation.NavigationView
+                android:id="@+id/directionsnav"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+
+
+                android:background="@drawable/type"
+
+
+                app:itemIconTint="@color/colorss"
+                app:itemTextColor="#FFFF"
+
+                app:labelVisibilityMode="unlabeled"
+                app:menu="@menu/next" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="bottom|right">
+        <ImageView
+            android:id="@+id/getmymovinglocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical|right"
+            android:layout_margin="30dp"
+
+
+
+            android:background="@drawable/directions"
+            android:src="@drawable/movingbusdirection"
+
+
+            />
+        <ImageView
+            android:id="@+id/getmylocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+
+            android:layout_margin="30dp"
+
+
+            android:background="@drawable/mydesign"
+            android:src="@drawable/mylocation"
+
+
+            />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:background="#F6F5F5"
+            app:itemIconTint="@color/colorss"
+            app:itemTextColor="@color/colorss"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="1sp"
+
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_menu" />
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>
+
+
+

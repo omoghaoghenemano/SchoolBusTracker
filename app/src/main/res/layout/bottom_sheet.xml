@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/design_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#60000000"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="80dp"
+
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#60000000"
+        app:cardCornerRadius="1dp"
+        app:cardElevation="20dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#00000000"
+            >
+
+            <View
+                android:layout_width="30dp"
+                android:layout_height="9dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="#DADADC" />
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+
+                android:background="@drawable/searchcolor"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                app:queryHint="Search for a stop or place"
+
+                android:id="@+id/Sv_location"
+                android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+                app:iconifiedByDefault="false"
+                android:elevation="5dp"></androidx.appcompat.widget.SearchView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                android:text="More"
+                android:textColor="#EFECEC"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:fontFamily="serif"
+
+
+
+                />
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttoncolor"
+                android:layout_marginTop="30dp">
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

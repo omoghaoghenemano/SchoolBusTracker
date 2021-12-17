@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/bus_fragment">
+
+    <fragment
+        android:id="@+id/bus_fragment"
+        android:name="com.example.gpstracking.bus_fragment"
+        android:label="fragment_bus_fragment"
+        tools:layout="@layout/fragment_bus_fragment" />
+    <fragment
+        android:id="@+id/road"
+        android:name="com.example.gpstracking.Road"
+        android:label="fragment_road"
+        tools:layout="@layout/fragment_road" />
+    <fragment
+        android:id="@+id/activity"
+        android:name="com.example.gpstracking.activity"
+        android:label="fragment_activity"
+        tools:layout="@layout/fragment_activity" />
+    <fragment
+        android:id="@+id/mores"
+        android:name="com.example.gpstracking.mores"
+        android:label="fragment_mores"
+        tools:layout="@layout/fragment_mores" />
+</navigation>

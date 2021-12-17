@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_centerInParent="true"
+    android:id="@+id/nearbuslayout"
+    android:gravity="bottom|center|center_horizontal"
+    android:layout_alignParentBottom="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="Fragments.Nearestbus">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center|center_horizontal"
+
+        android:layout_alignParentBottom="true"
+
+
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+
+
+            android:layout_alignParentBottom="true"
+
+
+
+            android:id="@+id/recyclecontent"
+            tools:listitem="@layout/list_item"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whitecolor"
+
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="Fragments.Buses">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/whitecolor"
+
+
+
+        android:layout_alignParentBottom="true"
+
+
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/whitecolor"
+
+            android:layout_alignParentBottom="true"
+
+
+
+            android:id="@+id/recyclecontent"
+            tools:listitem="@layout/list_item"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

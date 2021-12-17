@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/nearbystops"
+        android:icon="@drawable/nearbytext"
+        android:title="nearby"/>
+    <item android:id="@+id/allroutes"
+        android:icon="@drawable/allstopstext"
+        android:title="allstops"/>
+</menu>
